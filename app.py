@@ -29,5 +29,5 @@ def login():
   else:
     return render_template("login.html",s="")
 
-if __name__ = "__main__":
+if __name__ == "__main__":
   app.run(host="0.0.0.0", port=5000)
