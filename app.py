@@ -22,8 +22,7 @@ def login():
   if request.method == "POST":
     name = request.form.get("name")
     db,conn = get_db()
-    db.execute("INSERT INTO users (name) VALUES (?)"
-,(name,))
+    db.execute("INSERT INTO users (name) VALUES (?)",(name,))
     conn.commit()
     conn.close()
     return render_template("login.html",s="add the name")
