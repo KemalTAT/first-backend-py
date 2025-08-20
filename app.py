@@ -25,7 +25,7 @@ def login():
     db.execute("INSERT INTO users (name) VALUES (?)",(name,))
     conn.commit()
     conn.close()
-    return render_template("login.html",s="add the name")
+    return render_template("login.html",s="added the name")
   else:
     return render_template("login.html",s="")
 
